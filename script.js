@@ -14,8 +14,8 @@ searchBox.addEventListener("click", ()=>{
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+let menuOpenBtn = document.querySelector(".navbar .fa-bars");
+let menuCloseBtn = document.querySelector(".nav-links .fa-bars");
 menuOpenBtn.onclick = function() {
 navLinks.style.left = "0";
 }
