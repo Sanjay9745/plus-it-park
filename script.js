@@ -37,3 +37,26 @@ let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
+
+const sound = document.querySelector(".sound");
+const video = document.querySelector("#myVideo");
+
+sound.addEventListener("click", function(){
+    if(video.muted){
+        video.muted = false;
+        sound.classList.remove("fa-volume-off");
+        sound.classList.add("fa-volume-up");
+    } else {
+        video.muted = true;
+        sound.classList.remove("fa-volume-up");
+        sound.classList.add("fa-volume-off");
+    }
+});
+
+window.addEventListener("scroll", function(){
+  if (window.scrollY >= 1500) {
+      video.muted = true;
+      sound.classList.remove("fa-volume-up");
+      sound.classList.add("fa-volume-off");
+  }
+});
