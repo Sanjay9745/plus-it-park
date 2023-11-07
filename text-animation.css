@@ -13,10 +13,19 @@
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 66px;
     text-decoration: none;
     white-space: nowrap;
+    margin-top: 120px;
+    margin-left: -300px;
+    line-height: 70px;
   }
+
+.btn-shine p{
+  font-size: 42px;
+  font-weight: 300;
+}
+
   @-moz-keyframes shine {
     0% {
       background-position: 0;
@@ -61,4 +70,36 @@
       background-position: 550px;
     }
   }
+.txtmob{
+  display: none;
+}
+  
+/* mobile view */
+
+@media only screen and (max-width: 700px) {
+  
+
+
+  .btn-shine{
+    font-size: 36px;
+    margin-top: 180px;
+    text-align: left;
+    padding: 10px;
+  
+  }
+
+  .btn-shine p{
+    font-size: 33px;
+   
+  }
+
+  .txtmob{
+    /* padding: 30px; */
+    display: block;
+  }
+
+  .txtdesk{
+    display: none;
+  }
+}
   
