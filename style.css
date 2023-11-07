@@ -90,7 +90,29 @@ html {
   .links li:hover .htmlcss-arrow,
   .links li:hover .js-arrow{
     transform: rotate(180deg);
+    color: white;
     }
+
+    .htmlcss-arrow {
+      color: white;
+      padding: 10px;
+    }
+    
+    .more-arrow {
+      color: white;
+      padding: 5px;
+    }
+
+    .js-arrow {
+      color: white;
+      padding: 10px;
+    }
+
+    .fa-bars{
+      color: white;
+    }
+
+
   nav .navbar .links li .arrow{
     /* background: red; */
     height: 100%;
@@ -299,6 +321,7 @@ html {
   .links li:hover .htmlcss-arrow,
   .links li:hover .js-arrow{
     transform: rotate(0deg);
+    color: white;
     }
     .navbar .links li .sub-menu .more-sub-menu{
       display: none;
@@ -324,6 +347,7 @@ html {
       .navbar .nav-links.show1 .links .htmlcss-arrow,
       .navbar .nav-links.show3 .links .js-arrow{
           transform: rotate(180deg);
+          color: white;
   }
       .navbar .nav-links.show2 .links .more-arrow{
         transform: rotate(90deg);
