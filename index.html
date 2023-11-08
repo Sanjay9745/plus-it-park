@@ -102,7 +102,7 @@
 
           <div class="text-animation-container">
             <a href="#" class="btn-shine" target="_blank">
-              <p>Start your digital life journey with</p>
+              <p id="text-to-change">Start your digital life journey with</p>
               <h3>PLUS IT BUSINESS PARK</h3>
             </a>
           </div>
@@ -127,12 +127,36 @@
           </div>
         </div>
       </div>
-      <div class="stack__card">😂</div>
+      <div class="stack__card"></div>
       <div class="stack__card">👽</div>
       <div class="stack__card">👌</div>
     </div>
     <script src="script.js"></script>
     <script>
+        const textArray = [
+      "Feel the energy of reaching shores of Digital ocean of opportunities..",
+      "Be confident and comfortable with the security features for your internet products.",
+      "Maintain the flow and the culture of your business.",
+      "Explore and expand your market to the digital horizon.",
+      "Have differentiated Insights /always / for the cryptosphere.",
+      "Start your Digital life journey",
+    ];
+
+    let index = 0;
+    const textToChange = document.getElementById('text-to-change');
+    const h3Element = document.querySelector('.text-animation-container h3');
+
+    function changeText() {
+      textToChange.textContent = textArray[index];
+      if (textArray[index] === "Start your Digital life journey") {
+        h3Element.style.display = 'block';
+      } else {
+        h3Element.style.display = 'none';
+      }
+      index = (index + 1) % textArray.length;
+    }
+
+    setInterval(changeText, 5000); // 5 seconds
       //sound
       const sound = document.querySelector(".sound");
       const video = document.querySelector("#myVideo");
