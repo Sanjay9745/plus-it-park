@@ -1,7 +1,7 @@
 .btn-shine {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 70%;
+    left: 30%;
     transform: translate(-50%, -50%);
     padding: 12px 48px;
     color: #fff;
@@ -12,20 +12,60 @@
     animation: shine 3s infinite linear;
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 66px;
     text-decoration: none;
     white-space: nowrap;
     margin-top: 120px;
     margin-left: -300px;
-    line-height: 70px;
+    line-height: 70px; */
+  
   }
 
 .btn-shine p{
-  font-size: 42px;
+  font-size: 2.5rem;
   font-weight: 300;
-}
+} 
+.btn-shine h3{
+  font-size: 4rem;
 
+} 
+@media screen and (max-width:767px){
+  .btn-shine{
+    padding: 0;
+    padding-left: 50px;
+   padding: unset;
+   left: 50%;
+   width:100%;
+   padding: 10px;
+  }
+  .btn-shine p{
+    font-size: 1.2rem;
+    font-weight: 300;
+  } 
+  .btn-shine h3{
+    font-size: 1.6rem;
+  
+  } 
+}
+@media screen and (min-width: 767px) and (max-width: 1300px) {
+  .btn-shine{
+    padding: 0;
+    padding-left: 50px;
+   padding: unset;
+   left: 50%;
+   width:100%;
+   padding: 10px;
+  }
+  .btn-shine p{
+    font-size: 2rem;
+    font-weight: 300;
+  } 
+  .btn-shine h3{
+    font-size: 3rem;
+  
+  } 
+}
   @-moz-keyframes shine {
     0% {
       background-position: 0;
@@ -70,38 +110,5 @@
       background-position: 550px;
     }
   }
-.txtmob{
-  display: none;
-}
-  
+
 /* mobile view */
-
-@media only screen and (max-width: 700px) {
-  
-
-
-  .btn-shine{
-    font-size: 36px;
-    margin-top: 180px;
-    text-align: left;
-    line-height: 35px;
-    margin-left: -25px;
-  
-  }
-
-  .btn-shine p{
-    font-size: 33px;
-    
-   
-  }
-
-  .txtmob{
-    /* padding: 30px; */
-    display: block;
-  }
-
-  .txtdesk{
-    display: none;
-  }
-}
-  
