@@ -1,7 +1,7 @@
 /* Service */
 
 .service-stack {
-    height: 500vh;
+    height: 400vh;
     width: 100%;
   }
   .service-container {
@@ -17,7 +17,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    background-image: url("./assets/images/service.gif");
+    background-image: url("./assets/images/service.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,15 @@
     transition: filter 0.5s ease;
     padding: 100px;
   }
-  
+  .service-screen-content h3{
+    font-size: 10rem;
+    font-weight: 500;
+  }
+  .service-screen-content p{
+   
+    font-weight: 300;
+    line-height: 1.5;
+  }
   .blurred {
     filter: blur(5px); /* Adjust the blur amount as needed */
   }
@@ -79,4 +87,14 @@
       opacity: 1;
     }
   }
-  
+  @media screen and (max-width: 768px) {
+    .service-screen-content h3{
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .service-screen-content p{
+     font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
