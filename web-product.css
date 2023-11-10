@@ -445,7 +445,7 @@
 }
 @media screen and (max-width: 768px) {
   .stack__card.web-contents {
-    height: 1400vh;
+    height: 1700vh;
   }
   .web-product-container {
     width: 100%;
