@@ -21,9 +21,10 @@
     height: 500px;
     background-color: black;
     position: relative;
-
     overflow: hidden;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 28px;
   }
   .item-hover-card.big {
@@ -31,7 +32,9 @@
     height: 500px;
     background-color: black;
     position: relative;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 
     border-radius: 28px;
@@ -40,28 +43,31 @@
   .ag-courses-item_bg {
     height: 128px;
     width: 128px;
-    background-color: #f9b234;
+    background-color: #ff3399;
     z-index: 1;
     position: absolute;
-    bottom: -75px;
-    left: -75px;
+    bottom: -105px;
+    left: -105px;
     border-radius: 50%;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .item-hover-card:hover .ag-courses-item_bg {
-    -webkit-transform: scale(4);
-    -ms-transform: scale(4);
-    transform: scale(4);
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
   }
   .item-hover-card .ag-courses-item-content {
     position: absolute;
     bottom: -100px;
     left: -275px;
   }
+  .item-hover-card .ag-courses-item-content h5 {
+    font-size: 1.3rem;
+  }
   .item-hover-card:hover .ag-courses-item-content {
-    bottom: -350px;
+    bottom: -380px;
     left: 35px;
     z-index: 2;
     color: white;
@@ -103,7 +109,7 @@
 
   }
   .card-hover-container-top h3{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     font-weight: 800;
   
   }

@@ -86,6 +86,17 @@
     object-fit: cover;
     border-radius: 25px;
   }
+
+  .stack-card-top p{
+    font-size: 1.2rem;
+    /* color: #999696; */
+    /* font-weight: 600; */
+  }
+
+.stack-card-top h2{
+  font-size: 3.2rem;
+}
+
   @media screen and (max-width:767px){
   .card{
     width: 280px;
