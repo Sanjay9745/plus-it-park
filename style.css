@@ -249,6 +249,19 @@ nav .navbar .links li:hover .js-sub-menu {
   height: 100%;
   object-fit: cover;
 }
+.home-button{
+
+  position: absolute;
+  bottom: 100px;
+  left: 150px;
+  color:var(--white);
+}
+.home-button p{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 
 @media (max-width: 920px) {
   nav .navbar {
