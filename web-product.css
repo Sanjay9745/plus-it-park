@@ -216,7 +216,7 @@
 .our-clan-left {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: flex-start;
   justify-content: space-evenly;
 }
@@ -228,6 +228,13 @@
 .our-clan-left h3 {
   font-size: 2.5rem;
   font-weight: 700;
+}
+.our-clan-left img {
+width: 70%;
+height: 400px;
+object-fit: cover;
+object-position: center;
+border-radius: 25px;
 }
 .our-clan-right {
   display: flex;
@@ -587,7 +594,7 @@
   .our-clan-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
   }

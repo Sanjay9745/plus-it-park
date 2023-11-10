@@ -81,4 +81,12 @@
   .test {
     background: red !important;
   }
-  
+  @media screen and (max-width:767px){
+    .scroller {
+      max-width: 280px;
+    }
+    .scroller__inner img{
+      width: 50px;
+      height: 50px;
+    }
+  }

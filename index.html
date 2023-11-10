@@ -90,6 +90,7 @@
             <li><a href="#">LET'S TALK</a></li>
             <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-bookmark"></i></li>
+            <li><a href="#" class="nav-estimate-button"><button>Estimate</button></li>
 
           </ul>
         </div>
@@ -115,14 +116,11 @@
             </a>
           </div>
           <div class="home-button">
-            <p>View More <i class="fa-solid fa-arrow-right"></i></p>
+            <p>View all Works <img src="./assets/images/icons/right-arrow.svg" alt=""></p>
           </div>
         </div>
-
-        <i
-          class="fa-solid fa-volume-off sound"
-          style="bottom: 170px; right: 50px; position: absolute"
-        ></i>
+        <img src="./assets/images/icons/sound-mute.svg" class="sound" alt=""  style="bottom: 100px; right: 50px; position: absolute;width: 35px;">
+    
       </div>
       <div class="stack__card about-stack">
         <div class="about-container">
@@ -313,7 +311,7 @@
               <button>View More</button>
             </div>
             <div class="about-us-right">
-              <img src="./assets/images/bussiness.png" alt="" />
+              <img src="./assets/images/about.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -325,13 +323,10 @@
               <img src="./assets/images/chairman.png" alt="" />
             </div>
             <div class="our-clan-right">
-              <h3>Name</h3>
+              <h3>Shabeer Khalid</h3>
               <h4>Chairman</h4>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
-                aut! Officiis, deserunt temporibus necessitatibus voluptas eos
-                odit voluptates repellat numquam accusantium saepe iste totam
-                quod facere tempora quia animi sit!
+                Turbojets are known for outperforming almost all comparable craft on the water, whether it is pulling a waterskier, cruising along the coast or whipping in and out of tight corners. With top speeds of up to 53 mph/85 kph, jumping aboard a Turbojet and firing up the engine is a thrill you will never tire of.
               </p>
             </div>
           </div>
@@ -614,6 +609,7 @@
         "Maintain the flow and the culture of your business.",
         "Explore and expand your market to the digital horizon.",
         "Have differentiated Insights always for the cryptosphere.",
+        "The art of process optimization Engineering.",
         "Start your Digital life journey",
       ];
 
@@ -639,20 +635,18 @@
       sound.addEventListener("click", function () {
         if (video.muted) {
           video.muted = false;
-          sound.classList.remove("fa-volume-off");
-          sound.classList.add("fa-volume-up");
+          sound.src="./assets/images/icons/sound-unmute.svg";
+          
         } else {
           video.muted = true;
-          sound.classList.remove("fa-volume-up");
-          sound.classList.add("fa-volume-off");
+          sound.src="./assets/images/icons/sound-mute.svg";
         }
       });
 
       window.addEventListener("scroll", function () {
         if (window.scrollY >= 1500) {
           video.muted = true;
-          sound.classList.remove("fa-volume-up");
-          sound.classList.add("fa-volume-off");
+          sound.src="./assets/images/icons/sound-mute.svg";
         }
       });
 
@@ -765,6 +759,43 @@
 
       // Automatic scroll every 3 seconds
       setInterval(scrollslider1, 3000);
+//our clients
+
+let currentIndex = 0;
+
+function updateContent() {
+  // Example data, replace with your actual data
+  const members = ['Chairman', 'CEO', 'CXO', 'CTO'];
+  const names = ['Shabeer Khalid', 'Jovin C Varghese', 'Rosliya Varghese', 'Sneha Haridas'];
+  const descriptions = [
+    "Turbojets are known for outperforming almost all comparable craft on the water, whether it is pulling a waterskier, cruising along the coast or whipping in and out of tight corners. With top speeds of up to 53 mph/85 kph, jumping aboard a Turbojet and firing up the engine is a thrill you will never tire of.",
+    "Our goal at Plus IT Park is to establish an environment that enables you to develop deeper and broader branches. Let's embark on a successful journey together!",
+    "The Turbojet design places the helmsman at the stern of the craft in the most secure position for maximum control. By utilising a centrally mounted engine and an inflatable tube, which is positioned close to the water, the Turbojet is supremely stable whether static or running at speed. This makes for easy and comfortable passenger boarding and a safe, enjoyable ride at high speed. What’s more, due to the inherent hull buoyancy, the tender will float even without the inflatable tube.",
+    "Our purpose-made jet pumps are not only more efficient, they are also incredibly safe, as there are no exposed moving parts. With stainless steel impeller and double-coated pumps, they provide excellent protection against corrosion, giving you long life with minimal maintenance.",
+  ];
+  const images = [
+    './assets/images/chairman.jpg',
+    './assets/images/ceo.jpg',
+    './assets/images/cxo.jpg',
+    './assets/images/cto.jpg',
+  ];
+
+  // Update HTML content with new data
+  document.querySelector('.our-clan-right h4').textContent = names[currentIndex];
+  document.querySelector('.our-clan-right h3').textContent = members[currentIndex];
+  document.querySelector('.our-clan-right p').textContent = descriptions[currentIndex];
+  document.querySelector('.our-clan-left img').src = images[currentIndex];
+  document.querySelector('.our-clan-left img').alt = `Image of ${names[currentIndex]}`;
+
+  // Increment the index and reset to 0 when it reaches the array length
+  currentIndex = (currentIndex + 1) % members.length;
+}
+
+// Initial content update
+updateContent();
+
+// Update content every 10 seconds
+setInterval(updateContent, 5000);
 
       //stack card
       document.addEventListener("DOMContentLoaded", function () {

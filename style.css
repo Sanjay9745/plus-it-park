@@ -249,6 +249,17 @@ nav .navbar .links li:hover .js-sub-menu {
   height: 100%;
   object-fit: cover;
 }
+.nav-estimate-button button{
+  background: none;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 .home-button{
 
   position: absolute;
