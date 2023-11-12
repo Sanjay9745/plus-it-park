@@ -155,7 +155,7 @@
 @media screen and (max-width:767px){
     .footer{
         width: 100%;
-        height: 400vh;
+        height: 450vh;
       
         display: flex;
         flex-direction: column;
@@ -172,5 +172,8 @@
         align-items: center;
         padding: 0 30px;
         gap: 20px;
+    }
+    .footer-lists{
+        padding-left: 20px;
     }
 }

@@ -125,6 +125,9 @@ nav .navbar .links li a {
   color: white;
   display: none;
 }
+.logo img{
+  width: 100px;
+}
 
 nav .navbar .links li .arrow {
   /* background: red; */
@@ -289,8 +292,17 @@ nav .navbar .links li:hover .js-sub-menu {
   nav .navbar .links li a {
     font-size: 15px;
   }
+  .navbar .bx-menu {
+    display: block;
+  }
+  
 }
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .fa-bars {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
   nav {
     /* position: relative; */
   }
@@ -406,7 +418,7 @@ nav .navbar .links li:hover .js-sub-menu {
   left:0;
   width:100%;
   height:100vh;
-  background-image: url("./assets/images/service.gif");
+  background-image: url("./assets/images/service.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

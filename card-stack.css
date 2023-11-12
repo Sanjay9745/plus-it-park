@@ -102,4 +102,8 @@
     width: 280px;
     height: 120px;
   }  
+  .stack-card-top h2 {
+    font-size: 2rem;
+    text-align: center;
+}
   }

@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.internship-home-container h1,
+.internship-home-container h2,
+.internship-home-container h3,
+.internship-home-container h4,
+.internship-home-container h5,
+.internship-home-container h6,
+.internship-home-container p {
+  margin: 0;
+  padding: 0;
+}
+.internship-home-container {
+  width: 100%;
+}
+.internship-home-header {
+  width: 100%;
+  height: 90vh;
+  background: url("./assets/images/web-development-internship.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+
+.internship-home-header-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+.internship-home-header-middle h4{
+font-size: 1.3rem;
+}
+.internship-home-header-middle {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.internship-home-header-middle i{
+color: #FF9800;
+}
+.internship-home-header-content p {
+  width: 50%;
+}
+.internship-home-bottom-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.internship-home-bottom {
+  width: 100%;
+  height: 60vh;
+
+  color: white;
+  background: black;
+}
+.internship-home-bottom-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0 50px 100px;
+  gap: 50px;
+  position: relative;
+}
+.internship-home-bottom-content{
+  line-height: 2;
+}
+.vertical-line {
+  display: block;
+  width: 2px;
+  height: 40%;
+  background: white;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  transform: translateX(-50%);
+}
+.internship-home-course-timeline-container {
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  background: rgba(73, 73, 73, 1);
+  padding: 20px;
+  height: 80vh;
+  border-radius: 25px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.internship-home-course-timeline-list {
+  height: 55vh;
+  color: white;
+
+}
+.internship-home-course-timeline-list ul {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.internship-home-course-timeline-list ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.internship-home-course-timeline-list ul::-webkit-scrollbar-track {
+  background: #868080;
+}
+
+/* Handle */
+.internship-home-course-timeline-list ul::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* Handle on hover */
+.internship-home-course-timeline-list ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.internship-home-course-timeline-list ul li {
+  position: relative;
+  list-style: none;
+}
+.internship-home-course-timeline-list ul li:before {
+  content: "·";
+  font-size: 120px;
+  vertical-align: middle;
+  line-height: 0.4;
+  padding-right: 10px;
+}
+.internship-home-course-timeline-list ul li span {
+  background: white;
+  height: 80px;
+  width: 2px;
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 12px;
+}
+.internship-course-certification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-top: 20px;
+}
+.internship-course-certification p {
+  font-size: 0.8rem;
+}
+.internship-download-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.internship-download-button button {
+  background: none;
+  color: white;
+
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid rgba(246, 184, 23, 1);
+}
+.internship-overview-container {
+  background: black;
+  color: white;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.internship-overview-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgba(73, 73, 73, 1);
+  border-radius: 25px;
+}
+.internship-overview-left-top,
+.internship-overview-left-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.internship-overview-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.internship-overview-rating i{
+ color: #FF531D;
+}
+.internship-overview-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.internship-overview-right-top {
+  height: 30vh;
+  background: url("./assets/images/overview.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.internship-overview-right-top-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding-right: 20px;
+}
+.internship-overview-right-top-content button {
+  background: rgba(255, 152, 0, 1);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.internship-overview-right-middle {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(73, 73, 73, 1);
+  border-radius: 25px;
+}
+.internship-overview-right-middle-content {
+  width: 70%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.internship-overview-right-middle-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.internship-overview-right-middle-content h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.internship-overview-right-middle-content i {
+  font-size: 1.2rem;
+  color: rgba(255, 152, 0, 1);
+}
+.internship-overview-right-bottom {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(73, 73, 73, 1);
+  border-radius: 25px;
+  gap: 20px;
+}
+.internship-overview-right-bottom button {
+  color: white;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.internship-overview-right-bottom button:nth-child(1) {
+  background: rgba(255, 152, 0, 1);
+  color: rgba(73, 73, 73, 1);
+  border: none;
+}
+.internship-overview-right-bottom button:nth-child(2) {
+  background: none;
+  border: 2px solid rgba(255, 152, 0, 1);
+  color: rgba(255, 152, 0, 1);
+}
+
+.internship-course-content {
+  width: 100%;
+  background: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.internship-course-content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 100px;
+}
+.internship-course-content-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.internship-course-content-carousel ul li {
+  margin-left: -35px;
+  list-style: none;
+}
+.internship-course-content-carousel ul li:before {
+  content: ">";
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 0.4;
+  padding-right: 5px;
+}
+/* carousel */
+.slider1-container {
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+}
+
+.slider1 {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.slider1 .card1 {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 500px;
+  background: #616060;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 25px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider1 .card1 img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.slider1::-webkit-scrollbar {
+  display: none;
+}
+
+.internship-course-content-carousel .fa-chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.internship-course-content-carousel .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .slider1 .card1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/*Certificate*/
+.internship-certificate {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internship-certificate-container {
+  display: grid;
+
+  grid-template-columns: 1fr 0.5fr;
+  background: white;
+  border-radius: 25px;
+  width: 80%;
+  height: 60%;
+  gap: 20px;
+  padding: 50px;
+}
+.internship-certificate-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 50px;
+  padding-right: 150px;
+}
+
+.internship-review {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internship-review-container {
+  width: 80%;
+  height: 80%;
+  background: #e3f7ff;
+  border-radius: 25px;
+  overflow-x: hidden;
+  padding: 0 50px;
+}
+.internship-review-container h1 {
+  padding: 30px 0 0 30px;
+}
+.internship-review-carousel {
+  width: 100%;
+  overflow-x: scroll;
+}
+.internship-review-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.internship-review-carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.testimonial-card-container {
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.testimonial-card {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  gap: 30px;
+  border-radius: 5px;
+  padding: 30px;
+}
+.testimonial-card-left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-card-left,
+.testimonial-card-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 30px;
+}
+.testimonial-card-right h3 {
+  margin: 0;
+}
+details {
+  width: 100%;
+  min-height: 5px;
+  max-width: 800px;
+  padding: 10px;
+
+  position: relative;
+  font-size: 22px;
+  border: 1px solid #ffffff48;
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+  background-color: black;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+details p {
+  color: #96999d;
+  font-weight: 300;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:focus::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.control-icon {
+  fill: rebeccapurple;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.control-icon-close {
+  display: none;
+}
+
+details[open] .control-icon-close {
+  display: initial;
+  transition: 0.3s ease;
+}
+
+details[open] .control-icon-expand {
+  display: none;
+}
+
+.internship-faq {
+  width: 100%;
+  height: 70vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internship-faq-container {
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+}
+.internship-faq-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.internship-tools {
+  width: 100%;
+  height: 80vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internship-tools-container {
+  width: 80%;
+  height: 55vh;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #e3f7ff;
+}
+.internship-tools-container h2 {
+  padding: 50px 0 0 50px;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.internship-tools-carousel {
+  padding: 10px;
+}
+
+.scroller {
+  max-width: 1200px;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.scroller__inner img {
+  width: 100px;
+  height: 100px;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 10s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 30s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* general styles */
+
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(215, 25%, 27%);
+  --clr-primary-800: hsl(217, 33%, 17%);
+  --clr-primary-900: hsl(218, 33%, 9%);
+}
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+/* for testing purposed to ensure the animation lined up correctly */
+.test {
+  background: red !important;
+}
+@media screen and (max-width: 767px) {
+  .scroller {
+    max-width: 280px;
+  }
+  .scroller__inner img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.internship-subscribe {
+  width: 100%;
+  height: 50vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.internship-subscribe-container {
+  width: 80%;
+  height: 40%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background: #e3f7ff;
+  color: black;
+}
+.internship-subscribe-content {
+  background: #e3f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.internship-subscribe-content input {
+  width: 100%;
+
+  outline: none;
+  border: none;
+  background: #e3f7ff;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.internship-subscribe-content button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ff9800;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 100%;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+}
